@@ -1,0 +1,130 @@
+# ---------------------------------------------------------------------------
+# Anything committed to a public repository is permanently public, even if it
+# is deleted later. Add to this file before you add the file it should exclude.
+# ---------------------------------------------------------------------------
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+*.mobileprovision
+secrets/
+.secret/
+credentials/
+credentials.json
+auth.json
+token.json
+tokens.json
+
+# SSH and signing material
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.gpg
+*.asc
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Dumps, backups, archives
+*.dump
+*.sql
+*.bak
+*.backup
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-error.log*
+
+# Runtime and cache
+tmp/
+temp/
+.cache/
+.cache-loader/
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.swp
+*.swo
+
+# Agent and AI scratch files
+.claude/
+CLAUDE.local.md
+.codex/
+.agent/
+scratch/
+scratchpad/
+*.transcript
+*.session
+*.session.json
+
+# Local tooling
+.local/
+.local-data/
+
+# Infrastructure state
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.tfvars
+!*.tfvars.example
+
+# Deployment
+.vercel/
+.cloudflare/
+.wrangler/
+.dev.vars
+
+# Local network information
+tailscale*
+*.tailscale
+
+# Node
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# Test artefacts
+playwright-report/
+test-results/
+blob-report/
+storybook-static/

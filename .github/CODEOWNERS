@@ -1,0 +1,6 @@
+# Review ownership. Keep in sync with the repository's protected branch rules.
+*                       @alexanderkoh
+
+/.github/               @alexanderkoh
+/SECURITY.md            @alexanderkoh
+/CLAUDE.md              @alexanderkoh

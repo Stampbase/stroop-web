@@ -1,0 +1,53 @@
+name: Bug report
+description: Report incorrect behaviour
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If this has security implications — unauthorized access, wallet or profile takeover, payment redirection, signature bypass, or contract exploitation — **do not file it publicly.** Use the private reporting process in SECURITY.md.
+  - type: checkboxes
+    id: not-security
+    attributes:
+      label: Confirmation
+      options:
+        - label: This report does not describe a vulnerability, and contains no credentials or real user data.
+          required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Steps to reproduce, using non-sensitive synthetic data only.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Affected version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, runtime version, browser, network (testnet/mainnet).
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Redact tokens, signatures, cookies, and addresses you do not intend to publish.
+      render: shell
